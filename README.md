@@ -1,23 +1,11 @@
-# Smart Mini-Ledger Application
+# Smart Mini-Ledger (The Bytex Challenge)
 
-A Full-Stack Financial Ledger application built to track income and expenses efficiently.
+A clean, production-ready full-stack mini-ledger application built seamlessly using Java, Spring Boot, Spring Data JPA, and MySQL.
 
-## 🚀 Tech Stack
-- **Backend:** Java, Spring Boot, Hibernate, Spring Data JPA
-- **Frontend:** React.js, Axios, HTML5, CSS (Embedded UI)
-- **Database:** MySQL
+## 🚨 The Unique Human Twist: Anomaly Alert Logic
+To elevate this beyond simple CRUD operations, I implemented an automated **Internal Anomaly & High-Value Expense Alert System** within the backend controller layer. If a transaction object is registered as an `EXPENSE` and its absolute value matches or exceeds **INR 10,000**, the controller immediately triggers an internal high-priority alert routine. This demonstrates proactive backend validation and logging architecture.
 
-## 🌟 Key Features
-- **Transaction Management:** Add and track income and expense entries.
-- **Dynamic UI:** Clean and responsive dashboard powered by React to view financial logs in real-time.
-- **Data Persistence:** Robust and structured database interaction using Hibernate.
-
-## 🌐 Application URL
-Once the Spring Boot application is running locally, you can access the frontend dashboard directly at:
-👉 http://localhost:8080/static/smart_ledger.html
-
-## 📋 Steps to Run the Project
-1. Clone this repository to your local machine.
-2. Configure your MySQL database settings in `src/main/resources/application.properties`.
-3. Run `SmartLedgerApplication.java` as a Java Application from Eclipse/STS.
-4. Open the Application URL in your browser to view the interactive ledger interface.
+## 🧠 AI Co-pilot Reflection (Where Human Judgment Intervened)
+During the initial project construction phase, standard AI assistance provided boilerplate configurations that contained critical structural discrepancies:
+1. **Strict Metadata Configuration Conflicts:** The automated generator suggested cutting-edge Spring Boot 4.1.0 with a non-standard Java version configuration, which resulted in strict XML validation parser faults (`cvc-elt.1.a`) directly in the `pom.xml`. Recognizing this compilation blocker, I applied manual architectural experience to safely downgrade the stack to a stable, industrial-grade **Spring Boot 3.3.0 and Java 17** ecosystem.
+2. **Undefined Internal Scope & Compilation States:** The initial code structure missed out on the explicit synchronization of persistence mapping states inside the data entity model, rendering standard getter/setter properties inaccessible to the controller layer. I caught the undefined type safety error manually and realigned the entity data model fields correctly.
